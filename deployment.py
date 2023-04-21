@@ -49,7 +49,7 @@ if uploaded_image is not None:
     st.image(image, caption='업로드된 파일', use_column_width=True)
     st.write("")
     st.write("분류 중입니다. 잠시만 기다려주세요...")
-    label,conf = dog_cat_classifier(image, 'https://drive.google.com/file/d/1-0foJATmdFCMns7Jf7lQemHhNHVszJoE/view?usp=share_link')
+    label,conf = dog_cat_classifier(image, 'yooha3.h5')
     ## st.write("label:",label,"conf:",conf)
     if label == 1:
         st.write("이 사진은 ",round(conf *100,2), "% 확률로 유재석입니다.")
