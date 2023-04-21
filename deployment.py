@@ -11,7 +11,7 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras.models import Sequential
-st.title("유재석/하도영 분류기2")
+st.title("유재석/하도영 분류기2 (by MobileNetV2)")
 st.header("분류할 이미지를 업로드해주세요:")
 
 def dog_cat_classifier(img, model):
